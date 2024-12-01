@@ -1,4 +1,3 @@
-
 # Set the path to your project directory
 $path = "C:\path\to\your\project"
 Set-Location $path
