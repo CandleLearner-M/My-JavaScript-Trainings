@@ -10,10 +10,28 @@ $watcher.EnableRaisingEvents = $true
 
 # Define the action to take when a change is detected
 $action = {
-    git add .
-    git commit -m "Automated commit"
-    git push
-    Write-Host "Changes committed and pushed." 
+    param($source, $e)
+    
+    # Create a script-level variable for the path
+    $scriptPath = "D:\Training\training"
+    
+    try {
+        Set-Location $scriptPath
+        # Add a small delay to ensure file operations are complete
+        Start-Sleep -Seconds 1
+        
+        # Execute git commands
+        git add .
+        if (git status --porcelain) {
+            git commit -m "Automated commit: Changes in $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')"
+            git push
+            Write-Host "Changes committed and pushed at $(Get-Date)"
+        } else {
+            Write-Host "No changes to commit"
+        }
+    } catch {
+        Write-Host "Error occurred: $_"
+    }
 }
 
 # Register the event handlers
