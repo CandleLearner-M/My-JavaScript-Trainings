@@ -13,7 +13,7 @@ $action = {
     git add .
     git commit -m "Automated commit"
     git push
-    Write-Host "Changes committed and pushed."
+    Write-Host "Changes committed and pushed." 
 }
 
 # Register the event handlers
