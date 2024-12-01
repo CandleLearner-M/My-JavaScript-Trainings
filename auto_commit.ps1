@@ -1,5 +1,5 @@
 # Set the path to your project directory
-$path = "C:\path\to\your\project"
+$path = "D:\Training\training"
 Set-Location $path
 
 # Initialize the FileSystemWatcher
