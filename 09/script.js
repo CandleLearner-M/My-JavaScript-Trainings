@@ -10,4 +10,4 @@ const forecast = [20, 18];
 
 // Write your solution below
 
-// 
+// 1.2. Destruc
