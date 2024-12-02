@@ -12,3 +12,4 @@ Using destructuring:
 const [firstTeamMember] = team;
 console.log(firstTeamMember);
 
+// 2. 
