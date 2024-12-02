@@ -12,6 +12,6 @@ const cafe = {
 
 const {{name}, mainDrink} = cafe;
 
-
+const {}
 
 // Write your solution below
