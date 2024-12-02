@@ -13,7 +13,8 @@ const store = {
 2. Destructure city and country from the nested location object
 */
 
-
+// 1. Getting the name and owner
 const {name, owner} = store;
 
+// 2. 
 // Write your solution below
