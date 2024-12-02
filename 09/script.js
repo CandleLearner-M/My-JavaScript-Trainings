@@ -14,4 +14,4 @@ const forecast = [20, 18];
 
 const [todayTemp = 'No data', tomorrowTemp = 'No data', nextDayTemp = 'No data'] = forecast;
 
-
+console.log(todayTemp, tomorrowTemp, )
