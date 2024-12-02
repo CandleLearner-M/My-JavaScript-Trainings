@@ -10,4 +10,4 @@ Using destructuring:
 
 // 1.Geting the first team member
 const [firstTeamMember, ,[nestedArrayMember1, nestedArrayMember2], , lastMember] = team;
-console.log(firstTeamMember, nestedArrayMember1, ne);
+console.log(firstTeamMember, nestedArrayMember1, nestedArrayMember2, lastMember);
