@@ -10,6 +10,8 @@ const cafe = {
 3. Get special and rename it to todaySpecial with a default value of 'No Special'
 */
 
-const {{name}, mainDrink}
+const {{name}, mainDrink} = cafe;
+
+
 
 // Write your solution below
