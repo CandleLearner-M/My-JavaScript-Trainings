@@ -1,12 +1,9 @@
-const scores = [10, [20, 30]];
+const classroom = ['Physics', ['John', 'Mary'], undefined];
 
 /* 
-1. Destructure this array to get:
-   - firstScore (from the main array)
-   - lowScore and highScore (from the nested array)
-2. Add a default value of 0 for highScore
+1. Get the subject from the first position
+2. Get only the second student name from the nested array
+3. Get the teacher name from the third position, using 'TBD' as default value
 */
 
-const [firstScore, [lowScore, highScore = 0]] = scores;
-console.log(firstScore, lowScore, highScore);
 // Write your solution below
