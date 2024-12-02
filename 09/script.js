@@ -5,3 +5,5 @@ const nestedArray = [1, [2, 3], 4];
 // Log the variable to the console.
 
 // Your code here:
+
+const []
