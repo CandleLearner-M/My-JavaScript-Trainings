@@ -12,6 +12,7 @@ const cafe = {
 
 const {{name}, mainDrink} = cafe;
 
-const {dessert: 'Cake'} = cafe;
+const {dessert = 'Cake'} = cafe;
+
 
 // Write your solution below
