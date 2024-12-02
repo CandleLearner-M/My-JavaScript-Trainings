@@ -12,6 +12,6 @@ const cafe = {
 
 const {{name}, mainDrink} = cafe;
 
-const {}
+const {dessert: }
 
 // Write your solution below
