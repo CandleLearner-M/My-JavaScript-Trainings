@@ -7,5 +7,5 @@ const scores = [10, [20, 30]];
 2. Add a default value of 0 for highScore
 */
 
-const [firstScore, [lowScore = ]]
+const [firstScore, [lowScore ]]
 // Write your solution below
