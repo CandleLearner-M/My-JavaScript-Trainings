@@ -6,4 +6,5 @@ const nestedArray = [1, [2, 3], 4];
 
 // Your code here:
 
-const [ , [nestedValue, ], ] = nestedArray
+const [ , [nestedValue, ], ] = nestedArray;
+console.log(nestedValue);
