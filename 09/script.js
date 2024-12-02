@@ -9,3 +9,4 @@ Using destructuring:
 */
 
 // Geting the first team member
+const [firstTeamMember]
