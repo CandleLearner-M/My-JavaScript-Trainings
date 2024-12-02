@@ -1,9 +1,7 @@
 // Given the following array:
-const numbers = [1, 2, 3, 4, 5];
+const colors = ['red'];
 
-// Use array destructuring to assign the first and third numbers to variables `first` and `third`.
-const [first, , third] = numbers;
+// Use array destructuring to assign the first color to `primaryColor` and the second color to `secondaryColor` with a default value of 'blue'.
 // Log the variables to the console.
 
-console.log(first, third);
 // Your code here:
