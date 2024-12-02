@@ -18,4 +18,3 @@ const product = {
 
 // Write your solution below
 
-TextDecoderStream;
