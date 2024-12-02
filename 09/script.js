@@ -1,17 +1,10 @@
-const forecast = [20, 18];
+const scores = [10, [20, 30]];
 
 /* 
-1. Destructure this array into three variables: 
-   - todayTemp
-   - tomorrowTemp
-   - nextDayTemp
-2. Since nextDayTemp isn't in the array, make it default to 'No data'
+1. Destructure this array to get:
+   - firstScore (from the main array)
+   - lowScore and highScore (from the nested array)
+2. Add a default value of 0 for highScore
 */
 
 // Write your solution below
-
-// 1.2. Destructuring the array into three variables with default values
-
-const [todayTemp = 'No data', tomorrowTemp = 'No data', nextDayTemp = 'No data'] = forecast;
-
-console.log(todayTemp, tomorrowTemp, nextDayTemp);
