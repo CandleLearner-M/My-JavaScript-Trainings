@@ -9,5 +9,5 @@ Using destructuring:
 */
 
 // 1.Geting the first team member
-const [firstTeamMember] = team;
+const [firstTeamMember, ,[]] = team;
 console.log(firstTeamMember);
