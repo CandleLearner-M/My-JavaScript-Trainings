@@ -8,5 +8,5 @@ const scores = [10, [20, 30]];
 */
 
 const [firstScore, [lowScore, highScore = 0]] = scores;
-console.log()
+console.log(firstScore, lowScore, highScore);
 // Write your solution below
