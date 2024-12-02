@@ -17,5 +17,5 @@ const store = {
 const {name, owner} = store;
 
 // 2. Destructuring city and country from the nested location object
-const {}
+const {city, country}
 // Write your solution below
