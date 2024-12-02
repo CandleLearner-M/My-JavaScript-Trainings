@@ -14,6 +14,6 @@ const {{name}, mainDrink} = cafe;
 
 const {dessert = 'Cake'} = cafe;
 
-const {special: }
+const {special: todaySpecial = 'No Special'}
 
 // Write your solution below
