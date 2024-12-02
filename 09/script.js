@@ -17,6 +17,6 @@ const store = {
 const {name, owner} = store;
 
 // 2. Destructuring city and country from the nested location object
-const {location: {city, country}} = store.location;
+const {location: {city, country}} = store;
 // Write your solution below
 console.log(name, owner, city, country)
