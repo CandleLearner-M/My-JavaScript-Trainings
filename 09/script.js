@@ -1,9 +1,8 @@
-// Given the following array:
-const colors = ['red'];
+// Given the following variables:
+let a = 1;
+let b = 2;
 
-// Use array destructuring to assign the first color to `primaryColor` and the second color to `secondaryColor` with a default value of 'blue'.
-const [primaryColor = 'blue', secondaryColor = 'blue'] = colors;
+// Use array destructuring to swap the values of `a` and `b`.
 // Log the variables to the console.
 
-console.log(primaryColor, secondaryColor);
 // Your code here:
