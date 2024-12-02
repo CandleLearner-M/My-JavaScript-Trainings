@@ -6,6 +6,6 @@ let b = 2;
 const arr = [a, b];
 [b, a] = [a, b]; 
 // Log the variables to the console.
-
+[b]
 
 // Your code here:
