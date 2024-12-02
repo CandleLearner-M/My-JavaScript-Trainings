@@ -9,4 +9,5 @@ const forecast = [20, 18];
 */
 
 // Write your solution below
-const 
+
+// 
