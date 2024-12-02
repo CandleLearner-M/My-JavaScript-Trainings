@@ -5,4 +5,5 @@ const colors = ['red'];
 const [primaryColor = 'blue', secondaryColor = 'blue'] = colors;
 // Log the variables to the console.
 
+console.log(primaryColor, secondaryColor);
 // Your code here:
