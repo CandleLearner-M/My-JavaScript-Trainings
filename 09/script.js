@@ -9,5 +9,5 @@ Using destructuring:
 */
 
 // 1.Geting the first team member
-const [firstTeamMember, ,[nestedA]] = team;
+const [firstTeamMember, ,[nestedArrayMember1, nest]] = team;
 console.log(firstTeamMember);
