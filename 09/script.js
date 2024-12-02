@@ -12,4 +12,6 @@ const forecast = [20, 18];
 
 // 1.2. Destructuring the array into three variables with default values
 
-const [todayTemp = 'No data', tomorrowTemp = 'No data', nextDayTemp = 'No data']
+const [todayTemp = 'No data', tomorrowTemp = 'No data', nextDayTemp = 'No data'] = forecast;
+
+
