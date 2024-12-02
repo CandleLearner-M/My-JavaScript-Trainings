@@ -7,3 +7,5 @@ const classroom = ['Physics', ['John', 'Mary'], undefined];
 */
 
 // Write your solution below
+
+const []
