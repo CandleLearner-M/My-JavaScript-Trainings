@@ -8,6 +8,7 @@ Using destructuring:
 4. Skip Tom and get Lisa
 */
 
-1// Geting the first team member
+// 1.Geting the first team member
 const [firstTeamMember] = team;
-console.log(firstTeamMember)
+console.log(firstTeamMember);
+
