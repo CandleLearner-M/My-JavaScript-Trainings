@@ -10,4 +10,6 @@ const cafe = {
 3. Get special and rename it to todaySpecial with a default value of 'No Special'
 */
 
+const {}
+
 // Write your solution below
