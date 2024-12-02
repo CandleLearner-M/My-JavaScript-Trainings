@@ -13,7 +13,7 @@ const cafe = {
 const {{name}, mainDrink} = cafe;
 // 2. Try to destructure dessert with a default value of 'Cake'
 const {dessert = 'Cake'} = cafe;
-// . Get special and rename it to todaySpecial with a default value of 'No Special'
+// 3. Get special and rename it to todaySpecial with a default value of 'No Special'
 const {special: todaySpecial = 'No Special'} = cafe;
 
 // Write your solution below
