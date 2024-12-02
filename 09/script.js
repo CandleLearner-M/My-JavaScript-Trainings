@@ -11,5 +11,5 @@ console.log(name, tata);
 // 2. Destructure categories into a variable called tags
 const {categories: tags} = restaurant;
 // 3. Get mainMenu but rename it to menu
-const {mainMenu}
+const {mainMenu: }
 // Write your solution below
