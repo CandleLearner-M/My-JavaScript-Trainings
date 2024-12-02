@@ -10,4 +10,6 @@ const forecast = [20, 18];
 
 // Write your solution below
 
-// 1.2. Destructuring the array into three variables with 
+// 1.2. Destructuring the array into three variables with default values
+
+const 
