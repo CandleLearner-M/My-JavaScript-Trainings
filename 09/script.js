@@ -9,7 +9,7 @@ const cafe = {
 2. Try to destructure dessert with a default value of 'Cake'
 3. Get special and rename it to todaySpecial with a default value of 'No Special'
 */
-
+// 1. Destructure name and mainDrink
 const {{name}, mainDrink} = cafe;
 
 const {dessert = 'Cake'} = cafe;
