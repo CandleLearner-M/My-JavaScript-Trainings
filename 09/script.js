@@ -9,7 +9,7 @@ const restaurant = {
 const {name, location} = restaurant;
 console.log(name, tata);
 // 2. Destructure categories into a variable called tags
-
+const {categories: }
 // 3. Get mainMenu but rename it to menu
 
 // Write your solution below
