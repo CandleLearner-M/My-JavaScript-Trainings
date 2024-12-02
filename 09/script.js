@@ -11,5 +11,3 @@ Using destructuring:
 // 1.Geting the first team member
 const [firstTeamMember] = team;
 console.log(firstTeamMember);
-
-// 2. 
