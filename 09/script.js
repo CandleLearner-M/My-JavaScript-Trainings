@@ -8,4 +8,5 @@ const classroom = ['Physics', ['John', 'Mary'], undefined];
 
 // Write your solution below
 
-const [firstSubject, [ , secondStudent], taecher = 'TBD'] = 
+const [firstSubject, [ , secondStudent], taecher = 'TBD'] = classroom;
+console.log(firstSubject, secondStudent, teacher)
