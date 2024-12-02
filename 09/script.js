@@ -8,3 +8,4 @@ Using destructuring:
 4. Skip Tom and get Lisa
 */
 
+// Geting the first team member
