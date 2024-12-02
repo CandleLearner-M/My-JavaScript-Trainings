@@ -6,8 +6,8 @@ const restaurant = {
 };
 
 // 1. Destructure the name and location into variables
-const {name, location: tata} = restaurant;
-console.log(name, location);
+const {name, location} = restaurant;
+console.log(name, tata);
 // 2. Destructure categories into a variable called tags
 // 3. Get mainMenu but rename it to menu
 
