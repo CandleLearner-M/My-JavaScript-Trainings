@@ -11,7 +11,7 @@ const cafe = {
 */
 // 1. Destructure name and mainDrink
 const {{name}, mainDrink} = cafe;
-
+// 2. Try to destructure dessert with a default value of 'Cake'
 const {dessert = 'Cake'} = cafe;
 
 const {special: todaySpecial = 'No Special'} = cafe;
