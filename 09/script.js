@@ -9,4 +9,5 @@ Using destructuring:
 */
 
 // Geting the first team member
-const [firstTeamMember]
+const [firstTeamMember] = team;
+console.log(firstTeamMember)
