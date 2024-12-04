@@ -16,6 +16,7 @@ function createTeams(teamName, ...players) {
 }
 
 // Test Case 1: Team with 3 players
+
 console.log(createTeams("Warriors", "John", "Mike", "Sarah"));
 
 // Test Case 2: Team with just 1 player
