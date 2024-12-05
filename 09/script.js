@@ -200,12 +200,18 @@ console.log(getGuestCount(null)); // "10" ✅
 console.log(getGuestCount(undefined)); // "10" ✅
 console.log(getGuestCount(5)); // "No guests!" ❌ (should be 5)
 
+const reservation = {
+  status: 'confirmed', // or 'pending', 'cancelled', etc.
+  table: 12 // The table number assigned to the reservation
+};
 
 // Task 5B: Handle reservation object:
 // - Check if reservation exists
 // - If exists, check reservation.status === 'confirmed'
 // - If confirmed, log reservation.table
 // Expected output: Should safely handle null reservation
+
+
 
 // Task 5C: Fix numGuests handling:
 // - Use ?? for default value 10
