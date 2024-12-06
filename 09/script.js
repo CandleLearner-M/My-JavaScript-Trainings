@@ -1,3 +1,5 @@
-const quiz = new Map()
+const quiz = new Map(
+  [,]
+);
 
 console.log(quiz);
