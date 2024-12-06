@@ -1,5 +1,5 @@
 const quiz = new Map(
-  ['question', '']
+  ['question', 'What is the best programming language in the world']
 );
 
 console.log(quiz);
