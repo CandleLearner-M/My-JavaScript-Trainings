@@ -1,3 +1,3 @@
 const quiz = new Map()
 
-cl
+console.log(quiz);
