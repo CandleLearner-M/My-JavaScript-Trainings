@@ -1,1 +1,1 @@
-const quiz = 
+const quiz = new Map()
