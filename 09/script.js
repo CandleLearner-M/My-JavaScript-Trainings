@@ -1,2 +1,2 @@
  const newMap = new Map();
-newMap.set()
+newMap.set(undifined, undifined);
