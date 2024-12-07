@@ -3,4 +3,5 @@
 // Should return a Map with: { 'a' => 3, 'b' => 2, 'c' => 1 }
 
 function countElements(arr) {
+  
 }
