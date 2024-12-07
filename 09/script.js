@@ -1,5 +1,2 @@
-const quiz = new Map(
-  ['question', 'What is the best programming language in the world?']
-);
+const const m = new type(arguments);
 
-console.log(quiz);
