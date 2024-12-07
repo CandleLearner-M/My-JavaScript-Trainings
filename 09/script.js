@@ -1,2 +1,2 @@
  const newMap = new Map();
-newMap.set(tata, 'undifined');
+newMap.set('tata', undefined);
