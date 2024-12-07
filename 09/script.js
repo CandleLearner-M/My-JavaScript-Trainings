@@ -1,5 +1,6 @@
-const map = new Map();
-map.set(undefined, 'value');    // undefined as key
-map.set('key', undefined);      // undefined as value
+// Create a function that counts how many times each element appears in an array
+// Example: countElements(['a', 'b', 'a', 'c', 'b', 'a'])
+// Should return a Map with: { 'a' => 3, 'b' => 2, 'c' => 1 }
 
-console.log(map)
+function countElements(arr) {
+}
