@@ -1,1 +1,1 @@
-const toCamel
+const toCamelc
