@@ -7,4 +7,4 @@ const transformer = function (str, func) {
   console.log(` Transformed String: ${func(str)}, this was transformed by ${func.name}`);
 }
 
-transformer('Mostafa is The best one!');
+transformer('Mostafa is The best one!', );
