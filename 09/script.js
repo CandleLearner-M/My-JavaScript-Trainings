@@ -1,3 +1,3 @@
-const  = function (str) {
+const first = function (str) {
 
 }
