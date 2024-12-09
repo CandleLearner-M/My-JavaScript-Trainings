@@ -3,5 +3,5 @@ const noSpaces = function (str) {
 }
 
 const transformer = function (str, func) {
-  console.log(` Transformed String: ${func(str)}, this was transformed by `);
+  console.log(` Transformed String: ${func(str)}, this was transformed by ${func}`);
 }
