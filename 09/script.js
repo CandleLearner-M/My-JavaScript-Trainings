@@ -1,1 +1,3 @@
-const toCamelc
+const toCamelCase = function (str) {
+  
+}
