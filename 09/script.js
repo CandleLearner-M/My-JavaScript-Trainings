@@ -1,3 +1,3 @@
-const first = function (str) {
-
+const noSpaces = function (str) {
+  return 
 }
