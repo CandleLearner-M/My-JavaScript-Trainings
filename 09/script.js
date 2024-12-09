@@ -1,3 +1,3 @@
 const noSpaces = function (str) {
-  return 
+  return str.replace
 }
