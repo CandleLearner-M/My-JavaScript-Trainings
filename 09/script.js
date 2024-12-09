@@ -1,3 +1,3 @@
 const noSpaces = function (str) {
-  return str.replace
+  return str.replaceAll(' ', '')
 }
