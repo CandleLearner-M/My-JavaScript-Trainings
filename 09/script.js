@@ -3,4 +3,4 @@ const greeting = function sayHey () {
 }
 
 greeting()
-say
+sayHey();
