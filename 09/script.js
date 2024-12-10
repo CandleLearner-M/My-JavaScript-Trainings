@@ -1,3 +1,3 @@
 const greeting = function sayHey () {
-  return 
+  return console.log('HI!');
 }
