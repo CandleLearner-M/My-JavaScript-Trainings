@@ -1,1 +1,3 @@
-const greeting = function say
+const greeting = function sayHey () {
+  
+}
