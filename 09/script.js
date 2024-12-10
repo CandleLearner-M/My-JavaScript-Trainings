@@ -1,1 +1,1 @@
-const greeting 
+const greeting = function say
