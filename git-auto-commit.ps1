@@ -20,7 +20,7 @@ if (Test-Path $stateFile) {
         $global:state = @{
             dailyCommitCount   = 0
             lastResetDate      = [DateTime]::UtcNow.Date
-            targetCommitsToday = Get-Random -Minimum 12 -Maximum 40
+            targetCommitsToday = Get-Random -Minimum 4 -Maximum 30
         }
         # Save initial state
         $global:state | ConvertTo-Json | Set-Content $stateFile
@@ -30,7 +30,7 @@ if (Test-Path $stateFile) {
     $global:state = @{
         dailyCommitCount   = 0
         lastResetDate      = [DateTime]::UtcNow.Date
-        targetCommitsToday = Get-Random -Minimum 12 -Maximum 40
+        targetCommitsToday = Get-Random -Minimum 4 -Maximum 30
     }
     # Save initial state
     $global:state | ConvertTo-Json | Set-Content $stateFile
@@ -87,7 +87,7 @@ $timerAction = {
     if ($currentDate -ne $global:state.lastResetDate) {
         $global:state.dailyCommitCount   = 0
         $global:state.lastResetDate      = $currentDate
-        $global:state.targetCommitsToday = Get-Random -Minimum 12 -Maximum 40
+        $global:state.targetCommitsToday = Get-Random -Minimum 4 -Maximum 30
 
         # Save reset state
         $stateFile = Join-Path "D:\Training\training" ".git-auto-commit-state.json"
