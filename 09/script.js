@@ -14,4 +14,4 @@ function outer(counter = 0) {
 const {inner1, inner2} = outer();
 inner1();
 inner2();
-inner
+inner1();
