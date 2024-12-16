@@ -221,10 +221,9 @@ displayMovementFirstTry(account1);
   .reduce((acc, mov) => acc + mov, 0);
   
   console.log(usdBalance)
-  */
-// Calculate the average age of human ages of the dogs
-const calcAverageHumanAge = function (dogsArr = []) {
-  // calculate each dog human age
+  // Calculate the average age of human ages of the dogs
+  const calcAverageHumanAge = function (dogsArr = []) {
+    // calculate each dog human age
   const humanAge = dogsArr.map((dogAge) =>
     dogAge > 2 ? dogAge * 4 + 16 : dogAge * 2
   );
@@ -239,11 +238,13 @@ const calcAverageHumanAge = function (dogsArr = []) {
   //     if (index === arr.length - 1) {
   //       return (acc + age) / arr.length;
   //     } else {
-  //       return acc + age;
+    //       return acc + age;
   //     }
   //   }, 0);
 
   //        const averageAge = humanAdultDogs.reduce(
-  //          (acc, age) => acc + age / humanAdultDogs.length,
+    //          (acc, age) => acc + age / humanAdultDogs.length,
   //    0
   //  );
+
+    */
