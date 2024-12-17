@@ -248,3 +248,5 @@ displayMovementFirstTry(account1);
   //  );
 
     */
+
+  const hello = 'Hello World!';
