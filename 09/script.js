@@ -249,4 +249,10 @@ displayMovementFirstTry(account1);
 
     */
 
-const mostafa = "The best";
+
+const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
+
+const lastMovIndex = movements.findLastIndex(mov => Math.abs(mov) > 2000);
+console.log(`You last large movement was ${movements.length - lastMovIndex} movements ago`)
+console.log(movements.at(lastMovIndex));
+  
