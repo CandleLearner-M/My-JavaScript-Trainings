@@ -249,3 +249,4 @@ displayMovementFirstTry(account1);
 
     */
 
+const mostafa = "The best";
