@@ -270,5 +270,6 @@ displayMovementFirstTry(account1);
   6. Do all the breeds have an average weight of 10kg or more? Log to the console whether "true" or "false".
   7. Are there any breeds that are "active"? "Active" means that the dog has 3 or more activities. Log to the console whether "true" or "false".
 
-  BONUS: What's the average weight of the heaviest breed?
+  BONUS: What's the average weight of the heaviest breed that likes to fetch? HINT: Use the "Math.max" method along with the ... operator.
+
 */
