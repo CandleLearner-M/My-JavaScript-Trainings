@@ -259,7 +259,7 @@ displayMovementFirstTry(account1);
   // Coding Challenge #4
 
 /*
-  This time, Julia and Kate are studying the activity levels of different dog breeds.
+    This time, Julia and Kate are studying the activity levels of different dog breeds.
 
   YOUR TASKS:
   1. Store the average weight of a "Husky" in a variable "huskyWeight".
