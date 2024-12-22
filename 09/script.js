@@ -389,4 +389,5 @@ console.log(breedFetcher);
 // Grouping by
 const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
 
-const movementsGrouped = Object.groupedBy(movements, mov => mov > 0 ? 'diposit': 'withdrawal');
+const movementsGrouped = Object.groupBy(movements, mov => mov > 0 ? 'diposit': 'withdrawal');
+console.log(movementsGrouped)
