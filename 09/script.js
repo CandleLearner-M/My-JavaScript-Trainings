@@ -1,3 +1,4 @@
+"use strict";
 /**
  * Coding Challenge #1
 Julia and Kate are doing a study on dogs. So each of them asked 5 dog owners 
@@ -327,7 +328,7 @@ const breeds = [
   BONUS: What's the average weight of the heaviest breed that likes to fetch? HINT: Use the "Math.max" method along with the ... operator.
 
   */
- /*
+/*
 
   // Store the average weight of a 'Husky' in a variable 'huskyWeight'
   const huskyWeight = breeds.find((dog) => dog.breed === "Husky").averageWeight;
@@ -377,17 +378,120 @@ console.log(breeds.every((breed) => breed.averageWeight >= 10) ? true : false);
 console.log(
   breeds.some((breed) => breed.activities.length >= 3) ? true : false
 );
-
-// Bonus: What's the average weight of the heaviest breed that likes to fetch? HINT: Use the "Math.max" method along with the ... operator.
-
-const breedFetcher = Math.max(...breeds
-  .filter((breed) => breed.activities.includes("fetch"))
-  .map((breed) => breed.averageWeight));
-console.log(breedFetcher);
-*/
-
-// Grouping by
 const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
 
 const movementsGrouped = Object.groupBy(movements, mov => mov > 0 ? 'diposit': 'withdrawal');
 console.log(movementsGrouped)
+
+
+const breedFetcher = Math.max(...breeds
+.filter((breed) => breed.activities.includes("fetch"))
+.map((breed) => breed.averageWeight));
+console.log(breedFetcher);
+*/
+
+// Bonus: What's the average weight of the heaviest breed that likes to fetch? HINT: Use the "Math.max" method along with the ... operator.
+// Grouping by
+
+/**Coding Challenge #5
+
+Julia and Kate are still studying dogs. This time they are trying to figure out if the dogs in their area are eating too much or too little food.
+
+Formula for calculating recommended food portion:
+recommendedFood = weight ** 0.75 * 28.
+(The result is in grams of food, and the weight needs to be in kg.)
+
+Eating too much means the dog's current food portion is larger than the recommended portion, and eating too little is the opposite.
+
+Eating an okay amount means the dog's current food portion is within a range 10% above and below the recommended portion.
+
+Your Tasks:
+
+Loop over the array containing dog objects, and for each dog, calculate the recommended food portion (recFood) and add it to the object as a new property. Do NOT create a new array; simply loop over the array (we never did this before, so think about how you can do this without creating a new array).
+ */
+
+const dogs = [
+  { weight: 22, curFood: 250, owners: ["Alice", "Bob"] },
+  { weight: 8, curFood: 200, owners: ["Matilda"] },
+  { weight: 13, curFood: 275, owners: ["Sarah", "John", "Leo"] },
+  { weight: 18, curFood: 244, owners: ["Joe"] },
+  { weight: 32, curFood: 340, owners: ["Michael"] },
+];
+
+// 1. looping over the dogs array, calculating the recommended portion property and add it to the existing
+// Object
+dogs.forEach(function (dog) {
+  dog.recommendedFood = Math.floor(dog.weight ** 0.75 * 28);
+});
+
+// Find Sarah's dog and log to the console whether it's eating too much or too
+// little. Hint: Some dogs have multiple owners, so you first need to find Sarah in
+// the owners array, and so this one is a bit tricky (on purpose) �
+const sarahDog = dogs.find((dog) => dog.owners.includes("Sarah"));
+if (sarahDog.curFood < sarahDog.recommendedFood * 0.9) {
+  console.log(`sarahDog is eating too little`);
+} else if (sarahDog.curFood > sarahDog.recommendedFood * 1.1) {
+  console.log(`sarahDog is eating too much`);
+} else {
+  console.log(`sarahDog is eating well`);
+}
+
+// Create an array of all owners of the dogs that eats to much and another one for the ones who eats a bit
+const ownersCategorised = Object.groupBy(dogs, (dog) => {
+  if (dog.curFood > dog.recommendedFood * 1.1) {
+    return "ownerOfDogWhoEatTooMuch";
+  } else {
+    return "ownerOfDogWhoEatTooLittle";
+  }
+});
+console.log(ownersCategorised);
+
+const ownerOfDogWhoEatTooMuch = dogs
+  .filter((dog) => dog.curFood > dog.recommendedFood)
+  .flatMap((dog) => dog.owners);
+
+const ownerOfDogWhoEatTooLittle = dogs
+  .filter((dog) => dog.curFood < dog.recommendedFood)
+  .flatMap((dog) => dog.owners);
+
+console.log(ownerOfDogWhoEatTooLittle);
+console.log(ownerOfDogWhoEatTooMuch);
+
+console.log(
+  `${ownerOfDogWhoEatTooLittle.join(" and ")}! dogs are eating too little`
+);
+console.log(
+  `${ownerOfDogWhoEatTooMuch.join(" and ")}! dogs are eating too much`
+);
+
+console.log(dogs.some((dog) => dog.curFood === dog.recommendedFood));
+
+const okayAmountChecker = (dog) =>
+  dog.curFood > dog.recommendedFood * 0.9 &&
+  dog.curFood < dog.recommendedFood * 1.1;
+
+console.log(dogs.every(okayAmountChecker));
+
+// 7.
+const okayDogs = dogs.filter(okayAmountChecker);
+console.log(okayDogs);
+
+// 8.
+const groupedDogs = Object.groupBy(dogs, (dog) => {
+  if (dog.curFood < dog.recommendedFood) return "too-little";
+  if (dog.curFood > dog.recommendedFood) return "too-much";
+  else return "exact";
+});
+
+console.log(groupedDogs);
+
+// 9.
+
+const dogsGroupedByOwnersNum = Object.groupBy(dogs, (dog) => dog.owners.length);
+console.log(dogsGroupedByOwnersNum);
+
+// 10.
+const sortedByRecommandedPortion = dogs.toSorted(
+  (dog1, dog2) => dog1.recommendedFood - dog2.recommendedFood
+);
+console.log(sortedByRecommandedPortion)
